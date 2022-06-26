@@ -96,8 +96,8 @@ for i in f:
 # p.close()
 
 
-print(d3)
-print(d5)
+# print(d3)
+# print(d5)
 
 
 
