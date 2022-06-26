@@ -66,14 +66,14 @@ for i in f:
 # 4.3
 def spr(a,ta):
     lb=1
-    f=str(a)
+    f="" 
     for i in range (len(ta)):
         if a>ta[i] and a%ta[i]==0 : 
             spr(ta[i],ta)
-            f=str(ta[i])+","+str(lb)+","+" "+f
+            f=f+" "+str(ta[i])
             lb+=1
     if lb==3:
-        
+        f+=" "+str(a)        
         f+="\n"
         p.write(f)
     return lb
@@ -91,8 +91,8 @@ d3=0
 d5=0
 for i in range (len(t)):
     d=spr(t[i],t)
-    if d>=3: d3+=1
-    if d>=5: d5+=1
+    if d==3: d3+=1
+    if d==5: d5+=1
 p.close()
 
 
