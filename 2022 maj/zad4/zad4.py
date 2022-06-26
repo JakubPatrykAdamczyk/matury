@@ -66,24 +66,36 @@ for i in f:
 # 4.3
 def spr(a,ta):
     lb=1
+    f=str(a)
     for i in range (len(ta)):
-        if a!=ta[i] and a%ta[i]==0:
+        if a>ta[i] and a%ta[i]==0 : 
             spr(ta[i],ta)
+            f=str(ta[i])+","+str(lb)+","+" "+f
             lb+=1
-    return lb
+    if lb==3:
         
+        f+="\n"
+        p.write(f)
+    return lb
+
 
 
 
 
 t.sort()
 # print(t)
+ppath=os.getcwd()        
+ppath+="\\matury\\2022 maj\\zad4\\trojki.txt"
+p=open(ppath,'w')
 d3=0
 d5=0
 for i in range (len(t)):
     d=spr(t[i],t)
     if d>=3: d3+=1
     if d>=5: d5+=1
+p.close()
+
+
 print(d3)
 print(d5)
 
