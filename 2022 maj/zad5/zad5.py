@@ -1,5 +1,6 @@
 from itertools import count
 import plotly.express as px
+import matplotlib.pyplot as plt
 import os
 
 mypath=os.getcwd()
@@ -87,7 +88,7 @@ for i in f:
 # labels = ['Gniezno','Malbork','Ogrodzieniec','Przemysl']
 # values = [gn, ma, ogr, prz]
  
-# fig = px.pie(values=values, names=labels,color_discrete_sequence=px.colors.sequential.RdBu)
+# fig = plt.pie(values,labels=labels,autopct='%1.1f%%',startangle=90)
  
-# fig.show()
+# plt.show()
         
