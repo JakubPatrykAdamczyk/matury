@@ -64,8 +64,15 @@ for i in f:
 # print(str(t[i_max2])+" : "+l[str(t[i_max2])])
         
 # 4.3
+t.sort()
+print(t)
+a3=0
+a5=0
+for i in range(len(t),0):
+    av=1
+    print(t[i])
 
-   
+
   
 
 
