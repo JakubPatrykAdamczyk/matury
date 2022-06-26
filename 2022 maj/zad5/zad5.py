@@ -91,4 +91,33 @@ for i in f:
 # fig = plt.pie(values,labels=labels,autopct='%1.1f%%',startangle=90)
  
 # plt.show()
-        
+
+# #5.4
+# f=0
+# d_old="a"
+# d_firs=0
+# n=int(0)
+# for i in range(1,len(id)):
+#     if d_old==dat[i]:
+#         n=n+int(big[i])
+       
+#     else:
+#         # print(n)
+#         if 12000<int(n):
+#             f+=n
+#         d_old=dat[i]
+            
+#         if d_firs==0:
+#             print(dat[i])
+#             d_firs+=1
+#         n=int(big[i])
+# print("Filie suma: " + str(f))
+
+
+#  #5.5
+# z=0
+# for i in range(1,len(big)):
+#     z+=int(big[i])
+# a=z/365
+# print("Potrzebuje: "+ str(a))
+       
