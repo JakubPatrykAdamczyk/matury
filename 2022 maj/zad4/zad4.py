@@ -63,37 +63,37 @@ for i in f:
 # print(str(t[i_max1])+" : "+l[str(t[i_max1])])
 # print(str(t[i_max2])+" : "+l[str(t[i_max2])])
         
-# 4.3
-def spr(a,ta):
-    lb=1
-    f="" 
-    for i in range (len(ta)):
-        if a>ta[i] and a%ta[i]==0 : 
-            spr(ta[i],ta)
-            f=f+" "+str(ta[i])
-            lb+=1
-    if lb==3:
-        f+=" "+str(a)        
-        f+="\n"
-        p.write(f)
-    return lb
+# # 4.3
+# def spr(a,ta):
+#     lb=1
+#     f="" 
+#     for i in range (len(ta)):
+#         if a>ta[i] and a%ta[i]==0 : 
+#             spr(ta[i],ta)
+#             f=f+" "+str(ta[i])
+#             lb+=1
+#     if lb==3:
+#         f+=" "+str(a)        
+#         f+="\n"
+#         p.write(f)
+#     return lb
 
 
 
 
 
-t.sort()
-# print(t)
-ppath=os.getcwd()        
-ppath+="\\matury\\2022 maj\\zad4\\trojki.txt"
-p=open(ppath,'w')
-d3=0
-d5=0
-for i in range (len(t)):
-    d=spr(t[i],t)
-    if d==3: d3+=1
-    if d==5: d5+=1
-p.close()
+# t.sort()
+# # print(t)
+# ppath=os.getcwd()        
+# ppath+="\\matury\\2022 maj\\zad4\\trojki.txt"
+# p=open(ppath,'w')
+# d3=0
+# d5=0
+# for i in range (len(t)):
+#     d=spr(t[i],t)
+#     if d==3: d3+=1
+#     if d==5: d5+=1
+# p.close()
 
 
 print(d3)
